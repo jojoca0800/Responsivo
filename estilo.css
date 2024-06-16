@@ -1,0 +1,60 @@
+html, body{
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(107, 178, 219);
+    background: linear-gradient(90deg, rgb(107, 178, 219) 0%, rgb(144, 131, 168) 100%);
+
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background: coral;
+    width: 700px;
+    height: 350px;
+    padding: 16px;
+}
+input, textarea{
+    width: 100%;
+    min-width: 300px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid orchid;
+    padding: 8px;
+}
+.form-group, .form-textarea{
+    display: block;
+    max-width: 300px;
+}
+.form-group{
+    margin-right: 60px;
+}
+.form-textarea{
+    margin-top: 16px;
+}
+.row{
+display: flex;
+margin-top: 16px;
+}
+@media(max-width: 800px){
+    .form-group{
+        min-width: 100%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .form{
+        height: 450px;
+    }
+}
+    
